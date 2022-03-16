@@ -13,8 +13,8 @@ public class StartWeb {
 		
 		
 		public WebDriver appStart() {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Tuhin\\eclipse-workspace\\TestingFactory\\src\\main\\resources\\chromedriver\\chromedriver.exe");
-			this.driver = new ChromeDriver();
+			System.setProperty("webdriver.gecko.driver", "/home/tuhin/.jenkins/workspace/testseleniumscript/src/main/resources/geckodriverlinux");
+			this.driver = new FirefoxDriver();
 			this.driver.navigate().to("https://www.flipkart.com/");
 			this.driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			this.driver.manage().window().maximize();
