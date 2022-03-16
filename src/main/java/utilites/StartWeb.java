@@ -13,7 +13,7 @@ public class StartWeb {
 		
 		
 		public WebDriver appStart() {
-			System.setProperty("webdriver.chrome.driver", "/home/tuhin/.jenkins/workspace/testseleniumscript/src/main/resources/chromedriver/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "/home/tuhin/.jenkins/workspace/testseleniumscript/src/main/resources/chromedriver/chromedriver1");
 			driver = new ChromeDriver();
 			driver.navigate().to("https://www.flipkart.com/");
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
